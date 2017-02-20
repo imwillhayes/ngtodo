@@ -1,0 +1,8 @@
+<div class="task" ng-class={done:todo.done} ng-init="isShow=true"  ng-show="isShow">
+    <input type="checkbox" class="task-check" ng-model="todo.done">
+    <div class="task-main" ng-dblclick="edit(todo.done)" >
+        <span class="task-content" ng-show="!editing">{{todo.content}}</span>
+        <input type="text" class="task-editInput" ng-show="editing" ng-model="todo.content" ng-blur="editing=false" ng-keydown="save($event)" ng-class={editing:editing}>
+    </div>
+    <i class="task-delete"  ng-click="delete()">删除</i>
+</div>

@@ -1,0 +1,17 @@
+{
+  "name": "ngtodo",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-sass": "^2.3.1",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}

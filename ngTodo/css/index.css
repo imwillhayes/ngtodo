@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul,
+li {
+  list-style: none; }
+
+h1 {
+  text-align: center; }
+
+input {
+  outline: none; }
+
+body {
+  font-family: Arial;
+  padding-bottom: 200px; }
+
+.main {
+  width: 600px;
+  margin: auto;
+  padding: 10px; }
+
+#port {
+  display: block;
+  width: 400px;
+  height: 34px;
+  border: 1px solid #444;
+  outline: none;
+  margin: 10px auto;
+  text-indent: 1em;
+  border-radius: 8px; }
+  #port:focus {
+    box-shadow: 0 0 10px #4aafc1; }
+
+.ctrl {
+  padding: 10px 0 10px 5px; }
+  .ctrl button {
+    outline: none;
+    border: 1px solid #999;
+    padding: 0 1em;
+    height: 2;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer; }
+  .ctrl .active {
+    background-color: #49cff2; }
+
+.todolist {
+  min-height: 200px; }
+
+.task {
+  position: relative;
+  width: 100%;
+  padding: 0 40px 0 15px; }
+  .task .task-check {
+    position: absolute;
+    left: 5px;
+    top: 8px; }
+  .task .task-main {
+    padding: 0 10px;
+    line-height: 1.8; }
+  .task .editing {
+    background-color: #ccc; }
+  .task .task-conent {
+    width: 100%; }
+  .task .task-delete {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 14px;
+    font-style: normal;
+    color: red;
+    text-decoration: underline;
+    cursor: pointer; }
+  .task .task-editInput {
+    display: block;
+    width: 100%;
+    height: 26px;
+    border: none; }
+
+.done .task-content {
+  text-decoration: line-through;
+  color: #d8d8d8; }

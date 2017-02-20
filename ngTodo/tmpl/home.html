@@ -1,0 +1,24 @@
+<div class="main">
+    <h1>{{title}}</h1>
+    <input type="text" ng-model="newTodo" id="port" ng-keydown="add($event)">
+    <div class="ctrl" ng-init="cate='all'">
+        <button ng-click="cate='all'" ng-class={active:cate=='all'}>
+            全部
+        </button>
+        <button ng-click="cate='undone'" ng-class={active:cate=='undone'}>
+            未完成
+        </button>
+        <button ng-click="cate='done'" ng-class={active:cate=='done'}>
+            已完成
+        </button>
+        <button ng-click="deleteDone()">
+            删除已完成
+        </button>
+    </div>
+    <div class="todolist">
+        <div ng-repeat="t in tasks  track by $index ">
+            <task todo="t"></task>
+        </div>
+    </div>
+    <p style="text-align: center; line-height: 3;font-size: 14px;">双击编辑,Enter保存</p>
+</div>
